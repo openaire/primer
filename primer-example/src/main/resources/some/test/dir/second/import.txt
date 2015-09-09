@@ -1,0 +1,2 @@
+## This is a classpath-based import file (this header is required)
+third classpath some/test/dir/third

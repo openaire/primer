@@ -1,0 +1,2 @@
+## This is a classpath-based import file (this header is required)
+oozie_app classpath eu/dnetlib/iis/transformers/idreplacer/oozie_app

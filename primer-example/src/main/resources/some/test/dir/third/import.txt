@@ -1,0 +1,3 @@
+## This is a classpath-based import file (this header is required)
+from_jar classpath pl/edu/icm/coansys
+workflow coansys pl.edu.icm.coansys:citations-core-workflow
