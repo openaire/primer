@@ -53,7 +53,7 @@ public class PrimerMojo extends AbstractMojo {
             try {
                 for (File f : file.getParentFile().listFiles((FileFilter) new WildcardFileFilter(file.getName()))) {
                     try {
-                        getLog().info(f.toString());
+                        getLog().debug(f.toString());
                         if (f.getName().toLowerCase(Locale.ENGLISH).endsWith(".jar")) {
                             loader.addClassProvider(new JarClassProvider(f));
                         } else {
