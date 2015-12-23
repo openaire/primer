@@ -25,9 +25,12 @@
 		</license>
 	</licenses>
 	
-	
-	
-	
+	<scm>
+		<connection>scm:git:ssh://git@github.com/openaire/primer.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/openaire/primer.git</developerConnection>
+		<url>https://github.com/openaire/primer</url>
+		<tag>HEAD</tag>
+	</scm>
 
 	<ciManagement>
 		<system>jenkins</system>
@@ -59,16 +62,6 @@
 		</repository>
 		
 		<repository>
-			<id>dnet4-snapshots</id>
-			<name>D-Net 4 Snapshots</name>
-			<url>http://maven.research-infrastructures.eu/nexus/content/repositories/dnet4-snapshots</url>
-			<layout>default</layout>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-		
-		<repository>
 			<id>dnet4-releases</id>
 			<name>D-Net 4 Releases</name>
 			<url>http://maven.research-infrastructures.eu/nexus/content/repositories/dnet4-releases</url>
@@ -77,7 +70,7 @@
 				<enabled>false</enabled>
 			</snapshots>
 			<releases>
-				<enabled>true</enabled>				
+				<enabled>true</enabled>
 			</releases>
 		</repository>
 		
@@ -172,19 +165,19 @@
 		
 	</build>
 
-    
 	<distributionManagement>
 		<snapshotRepository>
-			<id>dnet4-snapshots</id>
-			<name>D-Net 4 Snapshots</name>
-			<url>http://maven.research-infrastructures.eu/nexus/content/repositories/dnet4-snapshots</url>
+			<id>iis-snapshots</id>
+			<name>IIS Snapshots</name>
+			<url>http://maven.ceon.pl/artifactory/iis-snapshots/</url>
 			<layout>default</layout>
 		</snapshotRepository>
 		<repository>
-			<id>dnet4-releases</id>
-			<url>http://maven.research-infrastructures.eu/nexus/content/repositories/dnet4-releases/</url>
+			<id>iis-releases</id>
+			<url>http://maven.ceon.pl/artifactory/iis-releases/</url>
 		</repository>
 	</distributionManagement>
+
 
 	<reporting>
 		<plugins>
